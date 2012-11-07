@@ -1,0 +1,68 @@
+Requeriments de l'aplicació:
+
+Usuaris: tutors, professors, Administrador( pot ser profe i tutor).
+
+Accedir a traves d'una web en navegadors actuals.
+
+Introduir informació de llistats alumnes, cursos, docents desde un arxiu.
+
+Estreure informació de llistats alumnes, cursos, docents cap a un arxiu.
+-----------------------------------------------------------------------------------------
+Administrador crea:
+1-nou any acadèmic al sistema.
+2-Gestiona cursos, Unitats impartició(assignatura UF) i subgrups.
+de les clases[vol saver el nom complet, codi M12UF01, la durada].
+
+Subgrups(cantitat nombrosa)-> desdoblament en A B C.. o Mati Tarda amb la distribució hores setmanals(ex. dilluns dimarts 2 h, dijous 1).
+
+3-Docents:
+	D'un correu mi.correo@hotmail.com
+	login usuari->mi.correo.
+	Contrasenyes encriptades a la BBDD.
+4-Assignació grups-clase a docent->
+	cada grup = docent.
+	si no tenen docent assignt es resaltara en vermell.
+
+modificar canvis d'assignació.
+
+*Taula:assignacions(codi,assignatura,docent, periode).
+
+Tutories i tutors assignats->
+	tutories = curs.
+*Taula Tutories(codi, nom_docent,Curs,subgrup).
+Curs sense tutor es resalta en vermell.
+ 
+----------------------------------------------------------------------------------
+
+Alumnes matriculats (codi, nom, cognoms, DNI(null), email(null), telèfon(null) ).
+
+Cada docent mirara el nombre total d'hores de la assignatura per alumne.
+
+Al loguejar un docent podra introduir el numero d'hores que ha faltat l'alumne(nomes a la clase que imparteix).
+
+Selecciona
+ classe/subgrup, llista de clases assignades,(la data sera actual), nombre d'hores faltades al dia.
+
+*Nota: només es podràn modificar les hores d'aquella setmana. Controlar que no es pasin el numero d'hores establertes segons el dia.
+Tenir un seleccionat per visualitzar tots els gurps i alumnes de l'asignatura aixi poder modificar les faltes.
+
+Poder introduïr retards per no perdre tot una hora.
+Tenir Inputbox, per poder descriure el motiu de la falta.
+Descarregar arxiu, Carregar arxiu de les faltes d'asistencia aixi molts docents podran utilitzar un full de calcul per introduïr faltes.
+
+Al realitzar un canvi es modificara també la data actual.
+
+El tutor veu totes les faltes de la semana dels alumnes de la seva tutoria.
+
+Buscar per:
+
+alumne(concret, asignat al tutor, tots els alumnes del tutor, pasin un % elevat de faltes.)
+
+grups/clases(per grup, per clase, per grups d'una clase, totes les classes del curs)
+
+Informació: faltes, retard, justificades, sense justificar, penalitzacio per retard ( varis retards = 1 falta) comentaris, correccions de faltes.
+
+tota la informacio es podra exportar en un arxiu.
+
+
+
